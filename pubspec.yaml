@@ -1,0 +1,64 @@
+name: flutter_calendar_app
+description: "A comprehensive calendar application for mobile devices."
+publish_to: 'none' # Remove this line if you intend to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Core Calendar Functionality
+  # For displaying different calendar views (month, week, day).
+  table_calendar: ^3.0.9
+
+  # For Hijri (Islamic) and Persian (Jalali) calendar support.
+  shamsi_date: ^1.0.1
+  hijri: ^3.0.0
+
+  # Weather Integration
+  # For fetching weather data from an API like OpenWeatherMap.
+  http: ^1.1.0
+  # For getting the user's current location to fetch local weather.
+  geolocator: ^10.1.0
+
+  # Currency Exchange
+  # For fetching the latest currency exchange rates from an API.
+  # (http is already included above)
+
+  # Reminders & Notifications
+  # For scheduling and displaying local notifications for reminders.
+  flutter_local_notifications: ^16.3.0
+  # For managing reminders and events in the device's native calendar.
+  device_calendar: ^4.3.0
+
+  # Data Converter
+  # For unit conversions (length, weight, temperature, etc.).
+  units_converter: ^2.1.1
+
+  # State Management (optional but recommended)
+  # A popular choice for managing application state.
+  provider: ^6.1.1
+
+  # Utility Packages
+  # For formatting dates and times.
+  intl: ^0.18.1
+  # For handling local storage (e.g., saving user preferences).
+  shared_preferences: ^2.2.2
+  # For dependency injection and service location.
+  get_it: ^7.6.4
+
+  # Icons
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
